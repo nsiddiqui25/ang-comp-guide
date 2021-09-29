@@ -23,7 +23,7 @@
 ### Role of AppModule and Component Declaration
 - Components are used to build web pages
 - Modules are used to bundle different components and functionalities into packages and lets Angular know which features it's using.
-- Looking at AppModule, we see an empty TS AppModule class and an @NgModule decorator.  This decorator is pre-configured with these JS properties:
+- Looking at AppModule, we see an empty TS AppModule class and an `@NgModule` decorator.  This decorator is pre-configured with these JS properties:
    - declarations - where new components are registered so Angular knows to use them
    - imports - makes the exported declarations of other modules available in the current module.  used to declare components, directives, pipes in our modules
    - providers
