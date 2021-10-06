@@ -36,7 +36,12 @@
 ### Working with Template Components
 - In our TS files, we can change our component's `templateUrl` property to `template` and write our HTML in there 
 - We can also use back-ticks (string interpolation) to write multi-line HTML code
-
+### Working with Component Styles
+- `stylesUrls` property that points to a CSS file
+- In the app-root component, we can use the css file to style our SPA
+- `stylesUrls` is an array; therefore, we can reference multiple stylesheets
+- `styles` property can also be used to write inline CSS; this will also take an array but of strings. Back-ticks can be used to write multi-line CSS
+- NOTE: when heavy code, always use an external file
 ## Debugging
 
 
