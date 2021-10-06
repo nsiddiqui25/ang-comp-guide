@@ -28,7 +28,14 @@
    - imports - makes the exported declarations of other modules available in the current module.  used to declare components, directives, pipes in our modules
    - providers
    - bootstrap - tells which component to look for to bootstrap or recognize in index.html file
-
+### Creating Components with CLI and Nesting
+- `ng generate component componentName` or `ng g c componentName`
+   - creates a folder in src with a component name
+   - inside, there are HTML, TS, CSS, and SPEC file related to the component in question
+- after creating new component, update AppModule also
+### Working with Template Components
+- In our TS files, we can change our component's `templateUrl` property to `template` and write our HTML in there 
+- We can also use back-ticks (string interpolation) to write multi-line HTML code
 
 ## Debugging
 
