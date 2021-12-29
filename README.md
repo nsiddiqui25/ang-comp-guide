@@ -6,7 +6,7 @@
 
 
 ## The Basics
-- Angular, at the end of the day is just a JavaScript framework, changing you DOM (HTML) at runtime.
+- Angular, at the end of the day is just a JavaScript framework, changing your DOM (HTML) at runtime.
 ### Components
 - AppComponent is the root component, and other components are added/nested on top of it.
 - Parts of our SPA can be broken up into smaller components, which can be reusable.
@@ -33,7 +33,7 @@
    - creates a folder in src with a component name
    - inside, there are HTML, TS, CSS, and SPEC file related to the component in question
 - after creating new component, update AppModule also
-### Working with Template Components
+### Working with Component Templates
 - In our TS files, we can change our component's `templateUrl` property to `template` and write our HTML in there 
 - We can also use back-ticks (string interpolation) to write multi-line HTML code
 ### Working with Component Styles
@@ -42,7 +42,18 @@
 - `stylesUrls` is an array; therefore, we can reference multiple stylesheets
 - `styles` property can also be used to write inline CSS; this will also take an array but of strings. Back-ticks can be used to write multi-line CSS
 - NOTE: when heavy code, always use an external file
+### What is Databinding?
+   - Communication between the template (HTML) and TypeScript code (Business Logic)
+   - To 'output' data from TypeScript code to Template, we use
+      - String Interpolation `{{data}}`
+      - Property Binding `[property]="data"`
+   - To react to (user) event, or input data from Template to TypeScript code, we use
+      - Event Binding `(event)="expression"`
+   - To use a combination of both, we use
+      - Two-Way Binding `[(ngModel)]="data"`
+         - Using this, we can react to user-events and output data at the same time
 ## Debugging
+
 
 
 ## Components and Data-Binding
