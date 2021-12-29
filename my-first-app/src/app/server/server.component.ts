@@ -5,5 +5,11 @@ import { Component } from "@angular/core";
   templateUrl: './server.component.html',
 })
 export class ServerComponent {
+  personName: string = "Creepo";
+  personOccupation: string = "Waffle Engineer";
+  personAge: number = 35;
 
+  getPersonAge() {
+    return this.personAge;
+  }
 }

@@ -52,6 +52,12 @@
    - To use a combination of both, we use
       - Two-Way Binding `[(ngModel)]="data"`
          - Using this, we can react to user-events and output data at the same time
+### String Interpolation
+   - Can hard-code a string or an expression which can be resolved to a string at the end, is the only condition for string interpolation
+   - Can also call a method that returns a string
+   - A ternary expression that returns a string can be used
+   - The only restriction is that multi-line expressions or block expressions don't work with this method of databinding (meaning no `if` or `for` control structures can be used)
+   - numbers are converted to strings when using string interpolation
 ## Debugging
 
 
