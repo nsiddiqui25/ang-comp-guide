@@ -63,7 +63,11 @@
    - Makes functionality of HTML properties dynamic and we do it by enclosing the property in square-brackets[].  This indicates to Angular we're using property-binding to directly bind to a native property dynamically that HTML has
    - We set it equal to an expression that resolves the type
    - Can also bind to other properties like directives and our own components
-
+### Property Binding vs. String Interpolation
+   - If you want to output something in the template, use String Interpolation
+   - If you want to change some property, in HTML, directive, or component, typically Property Binding is used
+   - NOTE: Don't mix the two together
+   
 ## Debugging
 
 
