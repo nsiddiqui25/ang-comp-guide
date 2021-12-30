@@ -58,6 +58,12 @@
    - A ternary expression that returns a string can be used
    - The only restriction is that multi-line expressions or block expressions don't work with this method of databinding (meaning no `if` or `for` control structures can be used)
    - numbers are converted to strings when using string interpolation
+### Property Binding
+   - Can use almost any HTML properties for binding
+   - Makes functionality of HTML properties dynamic and we do it by enclosing the property in square-brackets[].  This indicates to Angular we're using property-binding to directly bind to a native property dynamically that HTML has
+   - We set it equal to an expression that resolves the type
+   - Can also bind to other properties like directives and our own components
+   
 ## Debugging
 
 
